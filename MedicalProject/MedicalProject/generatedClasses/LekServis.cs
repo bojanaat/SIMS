@@ -33,10 +33,10 @@ public class LekServis
            if (maximalnaCena < l.Cena)
                continue;
 
-           if (!naziv.Equals("") && !l.Naziv.Equals(naziv))
+           if (!naziv.Equals("") && !l.Naziv.Contains(naziv))
                continue;
 
-           if (!proizvodjac.Equals("") && !l.Proizvodjac.Equals(proizvodjac))
+           if (!proizvodjac.Equals("") && !l.Proizvodjac.Contains(proizvodjac))
                continue;
 
            temp.Add(l);
