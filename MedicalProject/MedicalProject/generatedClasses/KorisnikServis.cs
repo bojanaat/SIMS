@@ -40,7 +40,7 @@ public class KorisnikServis
 
        this.korisnici.Add(korisnik);
        //writing to file
-       korisnikRepozitorijum.Sacuvaj(korisnik);
+       korisnikRepozitorijum.Sacuvaj(korisnici);
        return true;
    }
    
@@ -68,7 +68,7 @@ public class KorisnikServis
       if (korisnici != null)
          korisnici.Clear();
    }
-   public KorisnikRepozitorijum korisnikRepozitorijum;
+   public KorisnikRepozitorijum korisnikRepozitorijum = new KorisnikRepozitorijum();
    public Korisnik ulogovaniKorisnik;
 
 }

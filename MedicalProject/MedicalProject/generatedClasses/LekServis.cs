@@ -34,7 +34,7 @@ public class LekServis
    public void DodajLek(Lek lek)
    {
        this.lekovi.Add(lek);
-       lekRepozitorijum.Sacuvaj(lek);
+       lekRepozitorijum.Sacuvaj(lekovi);
    }
    
    public void IzbrisiLek(int sifraLeka)
@@ -44,7 +44,7 @@ public class LekServis
            if (l.Sifra == sifraLeka)
            {
                l.Izbrisan = true;
-               lekRepozitorijum.Sacuvaj(l);
+               lekRepozitorijum.Sacuvaj(lekovi);
                break;
            }
            
@@ -61,7 +61,7 @@ public class LekServis
                l.NaRecept = lek.NaRecept;
                l.Naziv = lek.Naziv;
                l.Cena = lek.Cena;
-               lekRepozitorijum.Sacuvaj(l);
+               lekRepozitorijum.Sacuvaj(lekovi);
                break;
            }
 

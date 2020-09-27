@@ -11,13 +11,15 @@ using System.Text;
 
 public class Racun
 {
-    private List<Lek> lekovi = new List<Lek>();
+    private Dictionary<Lek, int> lekovi = new Dictionary<Lek, int>();
 
-    public List<Lek> Lekovi
+    public Dictionary<Lek, int> Lekovi
     {
         get { return lekovi; }
         set { lekovi = value; }
     }
+
+   
    
    
    /// <pdGenerated>default removeAll</pdGenerated>

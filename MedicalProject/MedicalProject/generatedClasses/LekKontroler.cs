@@ -44,7 +44,7 @@ public class LekKontroler
    
    public void KreirajRacun(Racun racun)
    {
-       racunServis.AddRacun(racun);
+       racunServis.KreirajRacun(racun);
    }
 
    public LekServis lekServis = new LekServis();

@@ -43,6 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="generatedClasses\IRepozitorijum.cs" />
+    <Compile Include="generatedClasses\Korisnik.cs" />
+    <Compile Include="generatedClasses\KorisnikKontroler.cs" />
+    <Compile Include="generatedClasses\KorisnikRepozitorijum.cs" />
+    <Compile Include="generatedClasses\KorisnikServis.cs" />
+    <Compile Include="generatedClasses\Lek.cs" />
+    <Compile Include="generatedClasses\LekKontroler.cs" />
+    <Compile Include="generatedClasses\LekRepozitorijum.cs" />
+    <Compile Include="generatedClasses\LekServis.cs" />
+    <Compile Include="generatedClasses\Racun.cs" />
+    <Compile Include="generatedClasses\RacunRepozitorijum.cs" />
+    <Compile Include="generatedClasses\RacunServis.cs" />
+    <Compile Include="generatedClasses\Recept.cs" />
+    <Compile Include="generatedClasses\ReceptKontroler.cs" />
+    <Compile Include="generatedClasses\ReceptRepozitorijum.cs" />
+    <Compile Include="generatedClasses\ReceptServis.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

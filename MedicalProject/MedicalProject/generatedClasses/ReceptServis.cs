@@ -25,7 +25,7 @@ public class ReceptServis
        List<Recept> temp = new List<Recept>();
        foreach (Recept l in recepti)
        {
-           if (l.Sifra == sifra && l.Doktor.Equals(lekar) && l.JmbgPacijenta.Equals(jmbgPacijenta) && l.Lekovi.Contains(lek))
+           if (l.Sifra == sifra && l.Doktor.Equals(lekar) && l.JmbgPacijenta.Equals(jmbgPacijenta))
                temp.Add(l);
        }
        return temp;
@@ -48,7 +48,7 @@ public class ReceptServis
    public void KreirajRecept(Recept recept)
    {
        this.recepti.Add(recept);
-       receptRepozitorijum.Sacuvaj(recept);
+       receptRepozitorijum.Sacuvaj(recepti);
    }
 
    public List<Recept> recepti = new List<Recept>();

@@ -19,11 +19,13 @@ public class RacunServis
    public void KreirajRacun(Racun racun)
    {
        this.racuni.Add(racun);
-       racunRepozitorijum.Sacuvaj(racun);
+       racunRepozitorijum.Sacuvaj(racuni);
    }
 
-   public RacunRepozitorijum racunRepozitorijum = new RacunRepozitorijum();;
-   public List<Racun> racuni;
+
+
+   public RacunRepozitorijum racunRepozitorijum = new RacunRepozitorijum();
+   public List<Racun> racuni = new List<Racun>();
    
    /// <pdGenerated>default removeAll</pdGenerated>
    public void RemoveAllRacuni()

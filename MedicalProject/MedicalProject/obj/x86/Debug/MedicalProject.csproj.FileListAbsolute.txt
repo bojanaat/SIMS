@@ -1,0 +1,4 @@
+D:\workspace1\SIMS\MedicalProject\MedicalProject\bin\Debug\MedicalProject.exe
+D:\workspace1\SIMS\MedicalProject\MedicalProject\bin\Debug\MedicalProject.pdb
+D:\workspace1\SIMS\MedicalProject\MedicalProject\obj\x86\Debug\MedicalProject.exe
+D:\workspace1\SIMS\MedicalProject\MedicalProject\obj\x86\Debug\MedicalProject.pdb
