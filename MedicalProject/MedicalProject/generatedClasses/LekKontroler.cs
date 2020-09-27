@@ -47,6 +47,8 @@ public class LekKontroler
        racunServis.KreirajRacun(racun);
    }
 
+
+
    public LekServis lekServis = new LekServis();
    public RacunServis racunServis = new RacunServis();
 

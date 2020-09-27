@@ -24,9 +24,22 @@ public class LekServis
        List<Lek> temp = new List<Lek>();
        foreach (Lek l in lekovi)
        {
-           if (l.Sifra == sifra && l.Naziv.Equals(naziv) && l.Proizvodjac.Equals(proizvodjac) && l.Cena >= minimalnaCena
-               && l.Cena <= maximalnaCena)
-               temp.Add(l);
+           if (sifra != 0 && l.Sifra != sifra)
+               continue;
+
+           if (minimalnaCena>l.Cena)
+               continue;
+
+           if (maximalnaCena < l.Cena)
+               continue;
+
+           if (!naziv.Equals("") && !l.Naziv.Equals(naziv))
+               continue;
+
+           if (!proizvodjac.Equals("") && !l.Proizvodjac.Equals(proizvodjac))
+               continue;
+
+           temp.Add(l);
        }
       return temp;
    }

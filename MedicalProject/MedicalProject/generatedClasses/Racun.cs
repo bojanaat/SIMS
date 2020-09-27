@@ -67,4 +67,16 @@ public class Racun
        Cena = cena;
    }
 
+   public override string ToString()
+   {
+       
+       string s = "Sifra: " + sifra + ", Farmaceut: " + farmaceut + ", Datum: " + dat + ", Cena: " + cena + ", Lekovi: ";
+       
+       foreach(KeyValuePair<Lek,int> par in this.Lekovi) {
+            s += "Sifra: " + par.Key.Sifra +" kolicina: " + par.Value + " ";
+       }
+       s+=Environment.NewLine;
+       return s;
+   } 
+
 }

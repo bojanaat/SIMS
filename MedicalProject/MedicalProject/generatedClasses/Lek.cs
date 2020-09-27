@@ -64,4 +64,13 @@ public class Lek
        Cena = cena;
        Izbrisan = izbrisan;
    }
+
+   public override string ToString()
+   {
+       if (this.izbrisan)
+           return "";
+
+       string s = "Sifra: " + sifra + ", Naziv: " + naziv + ", Proizvodjac: " + proizvodjac + ", Na recept: " + naRecept + ", Cena: " + cena + Environment.NewLine;
+       return s;
+   } 
 }

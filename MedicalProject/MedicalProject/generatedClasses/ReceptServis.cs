@@ -23,10 +23,22 @@ public class ReceptServis
    public List<Recept> PretraziRecepte(String sifra, String lekar, String jmbgPacijenta, Lek lek)
    {
        List<Recept> temp = new List<Recept>();
-       foreach (Recept l in recepti)
+       foreach (Recept r in recepti)
        {
-           if (l.Sifra == sifra && l.Doktor.Equals(lekar) && l.JmbgPacijenta.Equals(jmbgPacijenta))
-               temp.Add(l);
+           if (!sifra.Equals("") && r.Sifra != sifra)
+               continue;
+
+           if (!lekar.Equals("") && !lekar.Equals(r.Doktor))
+               continue;
+
+           if (!jmbgPacijenta.Equals("") && !jmbgPacijenta.Equals(r.JmbgPacijenta))
+               continue;
+
+           if (lek!=null && !lek.Sifra.Equals(r.Doktor))
+               continue;
+
+
+           temp.Add(r);
        }
        return temp;
    }
@@ -35,7 +47,7 @@ public class ReceptServis
    {
        foreach (Recept r in recepti)
        {
-           if (r.Sifra.Equals(sifra))
+           if (r.Sifra.Equals(sifra.ToString()))
            {
                return r;
            }

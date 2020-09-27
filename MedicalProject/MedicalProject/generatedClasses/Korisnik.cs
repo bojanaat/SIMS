@@ -61,4 +61,9 @@ public class Korisnik
        Uloga = uloga;
    }
 
+   public override string ToString() {
+       string s = "Korisnicko ime: " + korisnickoIme + ", Ime: " + ime + ", Prezime: " + prezime + ", Uloga: " + uloga + Environment.NewLine;
+       return s;
+   } 
+
 }
