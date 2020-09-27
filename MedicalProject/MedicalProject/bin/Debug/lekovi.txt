@@ -1,0 +1,5 @@
+1-Lek1-Firma1-False-1100-False
+2-Lek2-Firma4-True-1200-False
+3-Lek3-Firma3-True-1200-False
+4-Lek4-Firma2-True-1200-False
+5-Lek5-Firma4-True-18000-True

@@ -23,13 +23,13 @@ public class RacunRepozitorijum
         }
 
 
-        System.IO.File.WriteAllLines(@"D:\racuni.txt", temp);
+        System.IO.File.WriteAllLines("racuni.txt", temp);
     }
 
     public List<Racun> Ucitaj()
     {
         List<Racun> racuni= new List<Racun>();
-        string[] temp = System.IO.File.ReadAllLines(@"D:\racuni.txt");
+        string[] temp = System.IO.File.ReadAllLines("racuni.txt");
         foreach (string t in temp)
         {
             string[] temp1 = t.Split('-');

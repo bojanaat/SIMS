@@ -23,13 +23,13 @@ public class KorisnikRepozitorijum
        }
 
 
-       System.IO.File.WriteAllLines(@"D:\korisnici.txt", temp);
+       System.IO.File.WriteAllLines("korisnici.txt", temp);
    }
    
    public List<Korisnik> Ucitaj()
    {
        List<Korisnik> korisnici = new List<Korisnik>();
-       string[] temp = System.IO.File.ReadAllLines(@"D:\korisnici.txt");
+       string[] temp = System.IO.File.ReadAllLines("korisnici.txt");
        foreach (string t in temp)
        {
            string[] temp1 = t.Split('-');

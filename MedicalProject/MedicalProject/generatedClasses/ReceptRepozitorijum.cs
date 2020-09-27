@@ -30,13 +30,13 @@ public class ReceptRepozitorijum
         }
 
 
-        System.IO.File.WriteAllLines(@"D:\recepti.txt", temp);
+        System.IO.File.WriteAllLines("recepti.txt", temp);
     }
 
     public List<Recept> Ucitaj()
     {
         List<Recept> recepti = new List<Recept>();
-        string[] temp = System.IO.File.ReadAllLines(@"D:\recepti.txt");
+        string[] temp = System.IO.File.ReadAllLines("recepti.txt");
         foreach (string t in temp)
         {
             string[] temp1 = t.Split('-');

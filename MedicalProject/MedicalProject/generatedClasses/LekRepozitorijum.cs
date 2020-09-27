@@ -23,13 +23,13 @@ public class LekRepozitorijum
         }
 
 
-        System.IO.File.WriteAllLines(@"D:\lekovi.txt", temp);
+        System.IO.File.WriteAllLines("lekovi.txt", temp);
     }
 
     public List<Lek> Ucitaj()
     {
         List<Lek> lekovi = new List<Lek>();
-        string[] temp = System.IO.File.ReadAllLines(@"D:\lekovi.txt");
+        string[] temp = System.IO.File.ReadAllLines("lekovi.txt");
         foreach (string t in temp)
         {
             string[] temp1 = t.Split('-');
